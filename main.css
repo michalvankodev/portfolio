@@ -13,7 +13,7 @@ input[type="submit"]::-moz-focus-inner {border:0;}
 
 body {
 	margin: 30px auto;
-	width: 990px;
+	max-width: 990px;
 	border: 2px solid #eee;
 	font-family: "Open Sans", sans-serif;
 
