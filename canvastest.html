@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Canvas test</title>
+	<style>
+	/* html5doctor.com/html-5-reset-stylesheet/ */
+	html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,menu,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,time,mark,audio,video,svg{ 	margin:0;	padding:0;	border:0;	outline:0;	font-size:100%;	vertical-align:baseline;	background:transparent;  line-height: 150%;}
+	body {line-height:1; }
+	ol,ul {list-style:none; list-style-image:none; }
+	blockquote,q {quotes:none; }
+	blockquote:before,blockquote:after,q:before,q:after {content:''; content:none; }
+	ins{text-decoration:none; }
+	del{text-decoration:line-through; }
+	.cf:before, .cf:after { content: " "; display: table; }
+	.cf:after { clear: both; }
+	input[type="submit"]::-moz-focus-inner {border:0;}
+
+	html,body {
+		height:100%;
+		width: 100%;
+	}
+	#can {
+		height: 100%;
+		width: 100%;
+	}
+	</style>
+</head>
+<body>
+<canvas id="can" height="1000" width="1600"></canvas>
+</body>
+<script>
+var canvas=document.getElementById('can');
+var ctx=canvas.getContext('2d');
+ctx.fillStyle='#FF0000';
+ctx.fillRect(0,0,1600,1000);
+ctx.fillStyle='#0000ff';
+ctx.fillRect(500,500,50,50);
+</script>
+</html>
