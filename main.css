@@ -12,17 +12,21 @@ input[type="submit"]::-moz-focus-inner {border:0;}
 
 
 body {
-	margin: 30px auto;
+	margin: 0px auto;
 	max-width: 990px;
-	border: 2px solid #eee;
 	font-family: "Open Sans", sans-serif;
-
-	box-shadow: 0px 16px 28px 0 rgba(0, 0, 0, 0.22);
 }
 body > header {
-	background-color: #E9E9E9;
+	background-color: #eeeeee;
 	padding: 10px 20px;
 	position: relative;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+20,eaeaea+100 */
+	background: #feffff; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #feffff 20%, #eaeaea 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #feffff 20%,#eaeaea 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #feffff 20%,#eaeaea 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#eaeaea',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 h1 {
 	font-size: 64px;
@@ -55,7 +59,11 @@ h3 {
 	font-size: 24px;
 	font-weight: 300;
 	padding: 5px 15px 10px;
-	background: #e9e9e9;
+	background: #f7f7f7; /* Old browsers */
+	background: -moz-linear-gradient(45deg, #f7f7f7 20%, #e6e6e6 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #f7f7f7 20%,#e6e6e6 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #f7f7f7 20%,#e6e6e6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#e6e6e6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	text-shadow: 1px 1px 2px rgba(171, 171, 171, 1);
 	border-bottom: 1px solid #E2E2E2;
 }
@@ -67,17 +75,16 @@ section p {
 	line-height: 22px;
 	padding: 3px 20px;
 	font-size: 15px;
+	text-align: justify;
 }
 h3 + p, h4 + p, h5 + p, .smaller-project > p:first-child {
-	margin-top: 7px;
+	margin-top: 5px;
 }
 
 h4,h5 {
 	font-weight: 100;
-	font-size: 18px;
-	padding: 6px 10px;
-	background: #F0F0F0;
-	border-bottom: 1px solid #D7D5D5;
+	font-size: 22px;
+	padding: 6px 10px 0px;
 }
 
 .project {
@@ -100,4 +107,19 @@ article:last-child {
 
 p {
 	color: #2D2D2D;
+}
+
+@media screen and (max-width: 450px) {
+	h1 {
+		font-size: 44px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	header aside {
+		position: static;
+	}
 }
